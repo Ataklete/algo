@@ -13,14 +13,9 @@ public class SumSalary {
                 new Employee("Elena", 30, 4000));
 
         System.out.println(emp.stream().filter(x -> x.getAge() > 10).map(Employee::getSalary).reduce(0, (x, y) -> x + y));
-       emp.stream().filter(x -> x.getAge() > 10).map((x)-> {
-            int sum = 0;
-            sum =+ x.getSalary();
-            return sum;
-        }).forEach(System.out::println);
         System.out.println(emp.stream().map(Employee::getName).collect(Collectors.joining(",")));
-        System.out.println("--------------");
         System.out.println(emp.stream().collect(Collectors.groupingBy(Employee::getName, Collectors.summingInt(Employee::getSalary))));
+
         // creating a list of Strings
         List<String> words = Arrays.asList("ati", "haile", "for",
                 "atiTeffera", "teffera");

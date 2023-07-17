@@ -1,3 +1,4 @@
+import java.util.stream.IntStream;
 
 /*
 * Given two strings s and t, determine if they are isomorphic. Two strings are isomorphic if the characters in s can be replaced to get t.
@@ -38,5 +39,13 @@ public class isomorphic {
     public static void main(String[] args) {
         String str1 = "aab", str2 = "xxy";
         System.out.println(isomorphic(str1.toCharArray(), str2.toCharArray()));
+
+        int[] ab = {1,2,3,4};
+        IntStream.of(ab).forEach(System.out::println);
+        IntStream.rangeClosed(1,20).forEach(System.out::print);
+        System.out.println();
+        IntStream.range(1,20).forEach(System.out::print);
+        System.out.println();
+        IntStream.range(1,20).filter(i->i%2==0).forEach(System.out::print);
     }
 }

@@ -22,11 +22,3 @@ public enum Status {
     }
 }
 
-class Main {
-    public static void main(String[] args) {
-        List<Status> s = List.of(Status.values());
-        Status.BLOCK.setI(403);
-        s.stream().forEach(s1 -> System.out.println(s1.ordinal() + ": " + s1 + " : "  + s1.getI()));
-
-    }
-}

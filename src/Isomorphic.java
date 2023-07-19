@@ -14,7 +14,7 @@ Input:  str1 = “aab”, str2 = “xyz”
 Output: False
 *
 * */
-public class isomorphic {
+public class Isomorphic {
 
     public static boolean isomorphic(char[] ch1, char[] ch2) {
         boolean status = false;

@@ -20,7 +20,7 @@ public class SumSalary {
         List<String> words = Arrays.asList("ati", "haile", "for",
                 "atiTeffera", "teffera");
 
-        // reduce() is called may be empty.
+        // reduce() is called may be empty.f
         Optional<String> longestString = words.stream()
                 .reduce((word1, word2)
                         -> word1.length() > word2.length()

@@ -27,5 +27,15 @@ public class NthLargestSalary {
         map.put("eleni", 900);
 
         nthLargest(map, 2);
+
+        System.out.println("---------Integer 2D Array With Flat Stream------------------");
+
+        Integer num[][] = {{1, 2, 3}, {8, 9, 10}, {15, 18, 19}};
+        System.out.println(
+                Arrays.stream(num)
+                        .flatMap(a -> Arrays.stream(a))
+                        .sorted(Collections.reverseOrder())
+                        .collect(Collectors.toList())
+                        .get(2));
     }
 }
